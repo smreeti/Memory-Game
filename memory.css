@@ -1,0 +1,247 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+body {
+    min-height: 100vh;
+    width: 65em;
+    margin: 0 auto;
+    background: url("https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80") no-repeat center;
+    background-size: cover;
+    padding: 0 2em 1em;
+    backdrop-filter: blur(
+        8px
+    );
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0.5em 0;
+    color: white;
+}
+
+h6 {
+    width: 40px;
+    padding: 2px;
+}
+
+label {
+    float: left;
+    margin: 8px 0;
+}
+
+input, select {
+    width: 10em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+input[type=checkbox] {
+    width: 2em;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.timer-container, .tries-container, .matched-container, .high-score-container, .correct-container, .actions-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 70px;
+}
+
+.actions-container {
+    width: 160px;
+}
+
+.header_left, .header_right {
+    flex-grow: 1;
+}
+
+.header_center {
+    flex-grow: 2;
+}
+
+.game-info {
+    font-size: 1em;
+    background: black;
+    border: 1px solid #007fff;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+}
+
+.game-info:active {
+    background: #007fff;
+    color: white;
+}
+
+.game-info:focus {
+    outline: none;
+}
+
+.game-info:hover {
+    background: #007fff;
+    color: white;
+}
+
+.game-info:disabled {
+    background: #007fff;
+    color: white;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cards {
+    margin-top: 2em;
+    display: inline-block;
+}
+
+#cards img {
+    height: 100px;
+    width: 80px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    float: left;
+    border-radius: 10px;
+}
+
+#cards img:hover {
+    transform: scale(1.1);
+}
+
+#tabs {
+    background: transparent;
+    border: none;
+}
+
+#tabs ul {
+    background: transparent;
+    border: transparent;
+}
+
+#tabs a:focus {
+    outline: none;
+}
+
+#tabs-1, #tabs-2, #tabs-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+a {
+    font-size: 12px;
+}
+
+fieldset {
+    border: none;
+    color: white;
+}
+fieldset legend {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1em;
+}
+
+fieldset li {
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    color: white;
+    line-height: 1.5em;
+}
+
+#tabs-3 {
+    align-items: start;
+    justify-content: center;
+    color: white;
+}
+
+#tabs-3 label, #tabs-3 input, #tabs-3 select {
+    font-size: 1.1em;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 12em;
+    height: 15px;
+    background: white;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #007fff;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #007fff;
+    cursor: pointer;
+}
+
+.card {
+    cursor: pointer;
+    transition: transform 500ms ease-in-out;
+}
+
+.cursor-default {
+    cursor: default
+}
+
+input[type=text], select {
+    color: black;
+    padding: 4px 4px;
+}
+input[type=button]{
+    background-color: #007fff;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    padding: 2px;
+    border: solid 1px white;
+}
+
+input[type=button]:hover {
+    background-color: white;
+    color: #007fff;
+    border: solid 1px #007fff;
+}
+
+#num_cards option {
+    color: black;
+    font-size: 14px;
+}
